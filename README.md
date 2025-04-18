@@ -1,0 +1,1 @@
+Each Folder contains an individual CDK project.
