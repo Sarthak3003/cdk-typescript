@@ -128,6 +128,8 @@ export class Ec2LoggingStack extends Stack {
       destination: new LambdaDestination(logProcessor),
       filterPattern: FilterPattern.allEvents(),
     });
+
+    logGroup.applyRemovalPolicy(RemovalPolicy.DESTROY);
   }
 }
 
